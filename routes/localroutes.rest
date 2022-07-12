@@ -1,0 +1,26 @@
+GET http://localhost:8000/students
+
+###
+
+GET http://localhost:8000/students/[id]
+
+###
+
+POST http://localhost:8000/students
+Content-Type: application/json
+
+{
+    "name": "Jeff Deutsch",
+    "class": "DWA"
+}
+
+###
+PATCH http://localhost:8000/students/62ccafd401aac37d604435cb
+Content-Type: application/json
+{
+    "name": "Jeff Deutsch",
+    "class": "DWA"
+}
+
+###
+DELETE http://localhost:8000/students/62ccafd401aac37d604435cb
